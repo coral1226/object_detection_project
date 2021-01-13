@@ -49,6 +49,7 @@ class KANADataset:
         self.class_names = (
             'BACKGROUND', "stand", "eavesdrop", "take_object", "weapon", "mask", "cap", "courier_box"
         )
+        #로깅
         logging.info("VOC Labels read from file: " + str(self.class_names))
 
         self.class_dict = {class_name: i for i, class_name in enumerate(self.class_names)}
