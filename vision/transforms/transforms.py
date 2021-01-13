@@ -418,22 +418,4 @@ class PhotometricDistort(object):
         im, boxes, labels = distort(im, boxes, labels)
         return self.rand_light_noise(im, boxes, labels)
 
-   
-class PhtozoneBaegopa(object):
-    def __init__(self):
-        self.pd = [
-            RandomContrast(),  # RGB
-            ConvertColor(current="RGB", transform='HSV'),  # HSV
-            RandomSaturation(),  # HSV
-            RandomHue(),  # HSV
-            ConvertColor(current='HSV', transform='RGB'),  # RGB
-            RandomContrast()  # RGB
-        ]
-        self.rand_brightness = RandomBrightness()
-        self.rand_light_noise = RandomLightingNoise()
-    def bobmuckja(self):
-        print('umsick')
-        print('haosdkf')
-        d = 0
-        if d != 0:
-            print('14')
+
