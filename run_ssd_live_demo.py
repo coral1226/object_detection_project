@@ -61,6 +61,7 @@ else:
 
 
 timer = Timer()
+#시간 체크
 while True:
     ret, orig_image = cap.read()
     if orig_image is None:
