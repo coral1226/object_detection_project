@@ -117,7 +117,7 @@ class ToPercentCoords(object):
 #        return image, boxes, labels
 
 class Resize(object):
-    def __init__(self, size=300):
+    def __init__(self, size=400):
         self.size = size
 
     def __call__(self, image, boxes=None, labels=None):
