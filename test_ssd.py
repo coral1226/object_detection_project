@@ -33,4 +33,5 @@ else:
 print(sum(p.numel() for p in net.parameters() if p.requires_grad))
 # for param_tensor in net.state_dict():
 #     print(param_tensor, "\t", net.state_dict()[param_tensor].dtype)
+#테스트부분
 exit()
