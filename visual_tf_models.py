@@ -19,4 +19,4 @@ train_writer.add_graph(sess.graph)
 
 
 while True:
-    time.sleep(6000)
+    time.sleep(1000)
