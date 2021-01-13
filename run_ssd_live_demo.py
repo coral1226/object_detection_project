@@ -83,6 +83,7 @@ while True:
                     (255, 0, 255),
                     2)  # line type
     cv2.imshow('annotated', orig_image)
+    #이미지 보기
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cap.release()
