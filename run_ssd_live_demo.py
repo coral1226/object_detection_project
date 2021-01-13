@@ -80,7 +80,7 @@ while True:
                     (box[0]+20, box[1]+40),#text
                     cv2.FONT_HERSHEY_PLAIN ,#font
                     1,  # font scale
-                    (255, 0, 255),
+                    (0, 0, 255),
                     2)  # line type
     cv2.imshow('annotated', orig_image)
     #이미지 보기
