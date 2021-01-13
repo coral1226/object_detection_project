@@ -20,4 +20,5 @@ for dirName, subdirList, fileList in os.walk(target):
             continue
 
         shutil.copy(os.path.join(dirName, filename), os.path.join(result_dir, filename))
+        # 확인부분
         # print(result_dir)
