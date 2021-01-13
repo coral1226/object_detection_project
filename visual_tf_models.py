@@ -17,5 +17,7 @@ LOGDIR='log'
 train_writer = tf.summary.FileWriter(LOGDIR)
 train_writer.add_graph(sess.graph)
 
+# print(train_writer)
+
 while True:
     time.sleep(1000)
