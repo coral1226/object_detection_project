@@ -126,7 +126,7 @@ if __name__ == '__main__':
     timer = Timer()
     class_names = [name.strip() for name in open(args.label_file).readlines()]
     
-    print(args)
+    # print(args)
     
     if args.dataset_type == "voc":
         dataset = VOCDataset(args.dataset, is_test=True)
