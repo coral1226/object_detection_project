@@ -35,6 +35,10 @@ def download(bucket, root, retry, counter, lock, path):
             if e.response['Error']['Code'] == "404":
                 logging.warning(f"The file s3://{bucket}/{src} does not exist.")
                 return
+            # 400 error 코드 추가
+            if e.response['Error']['Code'] == "400":
+                logging.warning(f"The file s3://{bucket}/{src} does not exist.")
+                return
             i += 1
             logging.warning(f"Sleep {i} and try again.")
             time.sleep(i)
@@ -124,7 +128,6 @@ if __name__ == '__main__':
         logging.warning(f"Download {url}.")
         http_download(url, class_description_file)
 
-    # 클래스 파일 로드
     class_descriptions = pd.read_csv(class_description_file,
                                     names=["id", "ClassName"])
     class_descriptions = class_descriptions[class_descriptions['ClassName'].isin(class_names)]
