@@ -1,8 +1,8 @@
-# object_detection_project
-object_detection_project
+# Object detection project
+object detection project
 
 
-### object_detection_eval_image
+### object detection eval image
 
 ![alt text](https://github.com/AI-infinyx/object_detection_project/blob/main/readme_ssd_example.jpg)
 
