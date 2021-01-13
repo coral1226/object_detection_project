@@ -10,6 +10,8 @@ import sys
 
 
 net_type = sys.argv[1]
+# stand 라벨 테스트 
+# class_names = ["stand"]
 class_names = ["person"]
 
 # print(net_type)

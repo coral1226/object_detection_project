@@ -166,7 +166,7 @@ class RandomLightingNoise(object):
             image = shuffle(image)
         return image, boxes, labels
 
-
+# 이미지 색상 변경 클래스 생성
 class ConvertColor(object):
     def __init__(self, current, transform):
         self.transform = transform
