@@ -82,7 +82,7 @@ while True:
                     1,  # font scale
                     (0, 0, 255),
                     2)  # line type
-    cv2.imshow('annotated', orig_image)
+    cv2.imshow('annotate', orig_image)
     #이미지 보기
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
