@@ -1,0 +1,8 @@
+BACKGROUND
+stand
+eavesdrop
+take_object
+weapon
+mask
+cap
+courier_box
