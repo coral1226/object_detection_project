@@ -1,6 +1,10 @@
 import os
 import shutil
 
+# 데이터 경로 추가
+target = "/home/bong20/data/iitp/track4/data/train_data"
+result = "/home/bong20/data/iitp/track4/data/train"
+
 target = "/home/bong20/data/iitp/track4/train_data"
 result = "/home/bong20/data/iitp/track4/train"
 
@@ -18,6 +22,8 @@ for dirName, subdirList, fileList in os.walk(target):
 
     for filename in fileList:
         _, ext = os.path.splitext(filename)
+        # 체크 부분 
+        print(ext)
         if ext.lower() not in [".jpg", ".jpeg", ".png", "bmp"]:
             continue
 
