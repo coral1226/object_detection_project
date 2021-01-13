@@ -29,4 +29,4 @@ weights_file = sys.argv[2]
 weights = read_weights(frozen_model)
 with open(weights_file, "wb") as f:
     pickle.dump(weights, f)
-#     print(f"Saved weights to {weights_file}.")
+    print(f"Saved weights to {weights_file}.")
