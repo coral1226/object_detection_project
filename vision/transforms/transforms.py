@@ -8,6 +8,7 @@ import numpy as np
 import types
 from numpy import random
 from random import choice
+import os
 
 
 def intersect(box_a, box_b):
