@@ -45,6 +45,7 @@ class KANADataset:
         self.keep_difficult = keep_difficult
 
         # classes should be a comma separated list
+        # 상황 더 추가 예정
         self.class_names = (
             'BACKGROUND', "stand", "eavesdrop", "take_object", "weapon", "mask", "cap", "courier_box"
         )

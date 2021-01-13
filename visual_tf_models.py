@@ -6,7 +6,7 @@ import time
 if len(sys.argv) < 2:
     print("Usage: python visual_tf_model.py <model.pb>")
     sys.exit(0)
-
+# print(sys.argv)
 model_file_name = sys.argv[1]
 with tf.Session() as sess:
     with gfile.FastGFile(model_file_name, 'rb') as f:
@@ -17,5 +17,7 @@ LOGDIR='log'
 train_writer = tf.summary.FileWriter(LOGDIR)
 train_writer.add_graph(sess.graph)
 
+# print(train_writer)
+
 while True:
-    time.sleep(1000)
+    time.sleep(6000)
