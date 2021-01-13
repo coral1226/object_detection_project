@@ -4,6 +4,7 @@ from tensorflow.python.framework import tensor_util
 import sys
 import pickle
 
+#extract tf weight
 
 def read_weights(frozen_model):
     weights = {}

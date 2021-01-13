@@ -51,6 +51,7 @@ elif net_type == 'sq-ssd-lite':
 else:
     predictor = create_vgg_ssd_predictor(net, candidate_size=200)
 
+# print(orig_image)
 orig_image = cv2.imread(image_path)
 image = cv2.cvtColor(orig_image, cv2.COLOR_BGR2RGB)
 boxes, labels, probs = predictor.predict(image, 10, 0.4)

@@ -12,6 +12,8 @@ import sys
 net_type = sys.argv[1]
 class_names = ["person"]
 
+# print(net_type)
+
 if net_type == 'vgg16-ssd':
     net = create_vgg_ssd(len(class_names), is_test=True)
 elif net_type == 'mb1-ssd':
@@ -33,4 +35,5 @@ else:
 print(sum(p.numel() for p in net.parameters() if p.requires_grad))
 # for param_tensor in net.state_dict():
 #     print(param_tensor, "\t", net.state_dict()[param_tensor].dtype)
+#테스트부분.
 exit()

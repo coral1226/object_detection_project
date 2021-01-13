@@ -4,6 +4,8 @@ import shutil
 target = "/home/bong20/data/iitp/track4/train_data"
 result = "/home/bong20/data/iitp/track4/train"
 
+# 파일 포멧 형식 추가 
+
 for dirName, subdirList, fileList in os.walk(target):
     if os.path.basename(dirName) != "image":
         continue
@@ -16,7 +18,7 @@ for dirName, subdirList, fileList in os.walk(target):
 
     for filename in fileList:
         _, ext = os.path.splitext(filename)
-        if ext.lower() not in [".jpg", ".jpeg", ".png"]:
+        if ext.lower() not in [".jpg", ".jpeg", ".png", "bmp"]:
             continue
 
         shutil.copy(os.path.join(dirName, filename), os.path.join(result_dir, filename))
