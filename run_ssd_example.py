@@ -70,3 +70,4 @@ for i in range(boxes.size(0)):
 path = "run_ssd_example_output.jpg"
 cv2.imwrite(path, orig_image)
 print(f"Found {len(probs)} objects. The output image is {path}")
+
