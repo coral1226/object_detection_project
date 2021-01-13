@@ -125,7 +125,9 @@ if __name__ == '__main__':
     eval_path.mkdir(exist_ok=True)
     timer = Timer()
     class_names = [name.strip() for name in open(args.label_file).readlines()]
-
+    
+    print(args)
+    
     if args.dataset_type == "voc":
         dataset = VOCDataset(args.dataset, is_test=True)
     elif args.dataset_type == 'open_images':
