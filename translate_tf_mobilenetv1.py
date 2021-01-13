@@ -4,6 +4,7 @@ import sys
 from vision.nn.mobilenet import MobileNetV1
 from extract_tf_weights import read_weights
 
+#translate tf mobilenetv1
 
 def fill_weights_torch_model(weights, state_dict):
     for name in state_dict:
@@ -63,6 +64,4 @@ if __name__ == '__main__':
     print("Translate tf weights.")
     fill_weights_torch_model(weights, states)
     torch.save(states, torch_weights_path)
-    
-
     
