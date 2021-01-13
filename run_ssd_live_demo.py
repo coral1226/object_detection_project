@@ -72,12 +72,12 @@ while True:
     interval = timer.end()
     print('Time: {:.2f}s, Detect Objects: {:d}.'.format(interval, labels.size(0)))
     for i in range(boxes.size(0)):
-        box = boxes[i, :]
+        boxs = boxes[i, :]
         label = f"{class_names[labels[i]]}: {probs[i]:.2f}"
-        cv2.rectangle(orig_image, (box[0], box[1]), (box[2], box[3]), (0, 255, 0), 4)#색상 수정
+        cv2.rectangle(orig_image, (boxs[0], boxs[1]), (boxs[2], boxs[3]), (0, 255, 0), 4)#색상 수정
 
         cv2.putText(orig_image, label,
-                    (box[0]+20, box[1]+40),#text
+                    (boxs[0]+20, boxs[1]+40),#text
                     cv2.FONT_HERSHEY_PLAIN ,#font
                     1,  # font scale
                     (0, 0, 255),
