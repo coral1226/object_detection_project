@@ -67,12 +67,12 @@ while True:
         continue
     image = cv2.cvtColor(orig_image, cv2.COLOR_BGR2RGB)
     timer.start()
-    boxes, labels, probs = predictor.predict(image, 10, 0.4)
+    boxes, labels, prob = predictor.predict(image, 10, 0.4)
     interval = timer.end()
     print('Time: {:.2f}s, Detect Objects: {:d}.'.format(interval, labels.size(0)))
     for i in range(boxes.size(0)):
         boxs = boxes[i, :]
-        label = f"{class_names[labels[i]]}: {probs[i]:.2f}"
+        label = f"{class_names[labels[i]]}: {prob[i]:.2f}"
         cv2.rectangle(orig_image, (boxs[0], boxs[1]), (boxs[2], boxs[3]), (0, 255, 0), 4)#색상 수정
 
         cv2.putText(orig_image, label,
