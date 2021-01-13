@@ -1,6 +1,10 @@
 import os
 import shutil
 
+# 경로 변경 
+# target = "/home/bong20/data/iitp/train_data/track4/train_data"
+# result = "/home/bong20/data/iitp/train_data/track4/train"
+
 target = "/home/bong20/data/iitp/track4/train_data"
 result = "/home/bong20/data/iitp/track4/train"
 
