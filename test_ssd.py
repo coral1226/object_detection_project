@@ -12,7 +12,8 @@ import sys
 net_type = sys.argv[1]
 class_names = ["person"]
 
-print(net_type)
+# print(net_type)
+
 if net_type == 'vgg16-ssd':
     net = create_vgg_ssd(len(class_names), is_test=True)
 elif net_type == 'mb1-ssd':
