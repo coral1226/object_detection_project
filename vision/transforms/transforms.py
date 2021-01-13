@@ -139,7 +139,7 @@ class RandomSaturation(object):
 
         return image, boxes, labels
 
-
+# 랜덤 휴 함수 추가
 class RandomHue(object):
     def __init__(self, delta=18.0):
         assert delta >= 0.0 and delta <= 360.0
