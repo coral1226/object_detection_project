@@ -44,7 +44,6 @@ else:
     print("The net type is wrong. It should be one of vgg16-ssd, mb1-ssd and mb1-ssd-lite.")
     sys.exit(1)
 net.load(model_path)
-
 if net_type == 'vgg16-ssd':
     predictor = create_vgg_ssd_predictor(net, candidate_size=200)
 elif net_type == 'mb1-ssd':
