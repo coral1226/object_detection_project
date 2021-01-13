@@ -63,3 +63,4 @@ if __name__ == '__main__':
     print("Translate tf weights.")
     fill_weights_torch_model(weights, states)
     torch.save(states, torch_weights_path)
+    
