@@ -78,7 +78,7 @@ while True:
 
         cv2.putText(orig_image, label,
                     (box[0]+20, box[1]+40),
-                    cv2.FONT_HERSHEY_SIMPLEX,
+                    cv2.FONT_HERSHEY_PLAIN ,#font
                     1,  # font scale
                     (255, 0, 255),
                     2)  # line type
