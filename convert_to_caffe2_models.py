@@ -11,7 +11,7 @@ import onnx
 
 
 if len(sys.argv) < 3:
-    print('Usage: python convert_to_caffe2_models.py <net type: mobilenet-v1-ssd|others>  <model path>')
+#     print('Usage: python convert_to_caffe2_models.py <net type: mobilenet-v1-ssd|others>  <model path>')
     sys.exit(0)
 net_type = sys.argv[1]
 model_path = sys.argv[2]
