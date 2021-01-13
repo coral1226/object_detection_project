@@ -15,7 +15,7 @@ from urllib import request
 
 s3 = boto3.client('s3', config=Config(signature_version=UNSIGNED))
 
-
+# download
 def download(bucket, root, retry, counter, lock, path):
     i = 0
     src = path
