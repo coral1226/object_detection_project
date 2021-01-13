@@ -117,7 +117,7 @@ class ToPercentCoords(object):
 #        return image, boxes, labels
 
 class Resize(object):
-    def __init__(self, size=400):
+    def __init__(self, size=300):
         self.size = size
 
     def __call__(self, image, boxes=None, labels=None):
@@ -433,3 +433,7 @@ class PhtozoneBaegopa(object):
         self.rand_light_noise = RandomLightingNoise()
     def bobmuckja(self):
         print('umsick')
+        print('haosdkf')
+        d = 0
+        if d != 0:
+            print('14')
