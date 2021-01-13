@@ -124,6 +124,7 @@ if __name__ == '__main__':
         logging.warning(f"Download {url}.")
         http_download(url, class_description_file)
 
+    # 클래스 파일 로드
     class_descriptions = pd.read_csv(class_description_file,
                                     names=["id", "ClassName"])
     class_descriptions = class_descriptions[class_descriptions['ClassName'].isin(class_names)]
