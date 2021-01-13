@@ -28,7 +28,7 @@ for image_id, g in r.groupby('ImageID'):
         label = f"{row.Prob:.2f}"
         cv2.putText(image, label,
                     (row.x1 + 20, row.y1 + 40),
-                    cv2.FONT_HERSHEY_SIMPLEX,
+                    cv2.FONT_HERSHEY_PLAIN,#font
                     1,  # font scale
                     (255, 0, 255),
                     2)  # line type
