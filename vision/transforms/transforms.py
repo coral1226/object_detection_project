@@ -330,7 +330,7 @@ class RandomSampleCrop(object):
 
                 return current_image, current_boxes, current_labels
 
-
+# 확장팩
 class Expand(object):
     def __init__(self, mean):
         self.mean = mean
