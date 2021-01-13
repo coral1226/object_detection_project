@@ -183,5 +183,5 @@ if __name__ == '__main__':
     batch_download(bucket, image_files, args.root, args.num_workers, args.retry)
     logging.warning("Task Done.")
 
-    
+  
     
