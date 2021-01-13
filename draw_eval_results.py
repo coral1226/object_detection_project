@@ -16,7 +16,6 @@ r['x1'] = r['x1'].astype(int)
 r['y1'] = r['y1'].astype(int)
 r['x2'] = r['x2'].astype(int)
 r['y2'] = r['y2'].astype(int)
-#좌표 수정
 
 
 for image_id, g in r.groupby('ImageID'):
