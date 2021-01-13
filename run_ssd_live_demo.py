@@ -86,4 +86,4 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cap.release()
-cv2.destroyAllWindows() # 윈도우 종료시 정지
+cv2.destroyAllWindows()
