@@ -16,7 +16,7 @@ def read_weights(frozen_model):
         for n in graph_def.node:
             if n.op == 'Const':
                 weights[n.name] = tensor_util.MakeNdarray(n.attr['value'].tensor)
-                print("Name:", n.name, "Shape:", weights[n.name].shape)
+#                 print("Name:", n.name, "Shape:", weights[n.name].shape)
     return weights
 
 
