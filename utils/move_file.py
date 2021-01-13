@@ -1,10 +1,6 @@
 import os
 import shutil
 
-# 데이터 경로 추가
-target = "/home/bong20/data/iitp/track4/data/train_data"
-result = "/home/bong20/data/iitp/track4/data/train"
-
 target = "/home/bong20/data/iitp/track4/train_data"
 result = "/home/bong20/data/iitp/track4/train"
 
